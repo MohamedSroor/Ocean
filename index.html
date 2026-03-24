@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Discovery sharks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div>
+            <span onclick="document.getElementById('depth-layers').scrollIntoView({behavior: 'smooth'})">Depth</span>
+            <span onclick="document.getElementById('creatures').scrollIntoView({behavior: 'smooth'})">Creatures</span>
+            <span onclick="document.getElementById('impact-map').scrollIntoView({behavior: 'smooth'})">Impact Map</span>
+            <span onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'})">Calculator</span>
+            <span onclick="document.getElementById('issues').scrollIntoView({behavior: 'smooth'})">Problems</span>
+            <span
+                onclick="document.getElementById('solutions').scrollIntoView({behavior: 'smooth'})">Eco-Solutions</span>
+        </div>
+        <div>2026</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <video src="images/Deep_Ocean_Video_Generation.mp4" class="H-bg" autoplay muted loop playsinline></video>
+        <div class="hero-overlay"></div>
+        <div class="light-rays"></div>
+        <div class="light-beam"></div>
+
+        <div class="hero-content">
+            <div class="tag">Team</div>
+            <h1>Discovery</h1>
+            <h2>Sharks.</h2>
+
+            <button class="scroll-btn" onclick="document.getElementById('stats').scrollIntoView()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path
+                        d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <section id="stats" class="stats-section">
+        <div class="stats-card-wrapper">
+            <div class="stats-card">
+                <div class="bg-img"></div>
+                <div class="bg-overlay"></div>
+                <div class="stats-content">
+                    <div class="stat-box">
+                        <h2>71%</h2>
+                        <p>Earth Covered by Ocean</p>
+                    </div>
+                    <div class="stat-box">
+                        <h2>230K+</h2>
+                        <p>Known Marine Species</p>
+                    </div>
+                    <div class="stat-box">
+                        <h2>11,034m</h2>
+                        <p>Deepest Point (Mariana Trench)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Space Section -->
+    <div class="space-content">
+        <div class="img"></div>
+        <h2>A SPACE.</h2>
+        <h3>Almost no one has ever been here.</h3>
+        <p>95% of the ocean is completely unexplored. Most people will never see what you are about to.</p>
+        <button class="btn-primary">
+            <span>Continue Diving</span>
+        </button>
+    </div>
+
+    <section class="depth-section" id="depth-layers">
+        <h2>Layers of the <span class="highlight">Ocean</span></h2>
+        <p>
+            From the bright surface to the darkest trenches, life adapts to extreme pressure,
+            cold, and a lack of light. These are the main depth zones of our ocean.
+        </p>
+
+        <div class="depth-layers">
+            <div class="depth-layer">
+                <div class="depth-label">
+                    <h3>Sunlight Zone</h3>
+                    <span>Epipelagic</span>
+
+                </div>
+                <div class="depth-range">0 – 200 m</div>
+            </div>
+
+            <div class="depth-layer">
+                <div class="depth-label">
+                    <h3>Twilight Zone</h3>
+                    <span>Mesopelagic</span>
+                </div>
+                <div class="depth-range">200 – 1,000 m</div>
+            </div>
+
+            <div class="depth-layer">
+                <div class="depth-label">
+                    <h3>Midnight Zone</h3>
+                    <span>Bathypelagic</span>
+                </div>
+                <div class="depth-range">1,000 – 4,000 m</div>
+            </div>
+
+            <div class="depth-layer">
+                <div class="depth-label">
+                    <h3>Abyssal Zone</h3>
+                    <span>Abyssopelagic</span>
+                </div>
+                <div class="depth-range">4,000 – 6,000 m</div>
+            </div>
+
+            <div class="depth-layer">
+                <div class="depth-label">
+                    <h3>Hadal Trenches</h3>
+                    <span>Hadalpelagic</span>
+                </div>
+                <div class="depth-range">6,000 – 11,000 m</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creatures Section -->
+    <section class="creatures-section" id="creatures">
+        <div class="creatures-header">
+            <h2>Deep <span class="highlight">Sea</span> Creatures</h2>
+            <p>
+                Meet some of the most iconic animals that inhabit different layers of the ocean,
+                from coastal giants to mysterious deep‑sea predators.
+            </p>
+        </div>
+
+        <div class="creatures-grid">
+            <div class="creature-card">
+                <div class="creature-image">
+                    <img src="images/Anglerfish.png" alt="Anglerfish">
+                </div>
+                <div class="creature-body">
+                    <h3>Anglerfish</h3>
+                    <p>
+                        A deep‑sea predator that uses a bioluminescent lure to attract prey in almost complete darkness.
+                    </p>
+                    <div class="creature-depth">
+                        Depth: ~200 – 2,000 m (Twilight to Midnight zone)
+                    </div>
+                </div>
+            </div>
+            <div class="creature-card">
+                <div class="creature-image">
+                    <img src="images/Coffinfish.png" alt="Coffinfish">
+                </div>
+                <div class="creature-body">
+                    <h3>Coffinfish</h3>
+                    <p>
+                        A slow bottom‑dweller that can inflate its body like a balloon to appear larger and deter
+                        predators.
+                    </p>
+                    <div class="creature-depth">
+                        Depth: ~50 – 2,000 m (Continental slope & deep sea)
+                    </div>
+                </div>
+            </div>
+            <div class="creature-card">
+                <div class="creature-image">
+                    <img src="images/Giant Tube Worm.png" alt="Giant Tube Worm">
+                </div>
+                <div class="creature-body">
+                    <h3>Giant Tube Worm</h3>
+                    <p>
+                        Lives near hydrothermal vents and survives with symbiotic bacteria that turn chemicals into
+                        energy.
+                    </p>
+                    <div class="creature-depth">
+                        Depth: ~2,000 – 3,000 m (Abyssal zone)
+                    </div>
+                </div>
+            </div>
+
+            <div class="creature-card">
+                <div class="creature-image">
+                    <img src="images/Barreleye Fish.png" alt="Barreleye Fish">
+                </div>
+                <div class="creature-body">
+                    <h3>Barreleye Fish</h3>
+                    <p>
+                        Known for its transparent head and upward‑pointing eyes that detect faint silhouettes above.
+                    </p>
+                    <div class="creature-depth">
+                        Depth: ~400 – 2,500 m (Twilight to Midnight)
+                    </div>
+                </div>
+            </div>
+
+            <div class="creature-card">
+                <div class="creature-image">
+                    <img src="images/Dumbo Octopus.png" alt="Dumbo Octopus">
+                </div>
+                <div class="creature-body">
+                    <h3>Dumbo Octopus</h3>
+                    <p>
+                        Named for its ear‑like fins, it is one of the deepest‑living octopus species ever recorded.
+                    </p>
+                    <div class="creature-depth">
+                        Depth: ~1,000 – 7,000 m (Midnight to Hadal)
+                    </div>
+                </div>
+            </div>
+
+            <div class="creature-card">
+                <div class="creature-image">
+                    <img src="images/Viperfish.png" alt="Viperfish">
+                </div>
+                <div class="creature-body">
+                    <h3>Viperfish</h3>
+                    <p>
+                        A fierce mid‑water hunter with long, needle‑like teeth and a hinged lower jaw to snare prey.
+                    </p>
+                    <div class="creature-depth">
+                        Depth: ~200 – 2,500 m (Twilight to Midnight)
+                    </div>
+                </div>
+            </div>
+
+            <div class="creature-card">
+                <div class="creature-image">
+                    <img src="images/White Shark.png" alt="White Shark">
+                </div>
+                <div class="creature-body">
+                    <h3>White Shark</h3>
+                    <p>
+                        A powerful apex predator that patrols coastal and open waters, capable of making deep dives.
+                    </p>
+                    <div class="creature-depth">
+                        Depth: surface – ~1,200 m (mostly upper 200 m, Sunlight zone)
+                    </div>
+                </div>
+            </div>
+
+            <div class="creature-card">
+                <div class="creature-image">
+                    <img src="images/Blue Whale.png" alt="Blue Whale">
+                </div>
+                <div class="creature-body">
+                    <h3>Blue Whale</h3>
+                    <p>
+                        The largest animal on Earth, feeding mainly on krill in the upper layers of the ocean.
+                    </p>
+                    <div class="creature-depth">
+                        Depth: surface – ~500 m (Sunlight zone)
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="creatures-btn">
+            <span>Explore more</span>
+        </button>
+    </section>
+
+
+    <!-- Impact-map -->
+    <section class="deep-sea-section" id="impact-map">
+        <div class="section-header">
+            <div class="tag">Analysis</div>
+            <h2>Ocean <span class="highlight">Hotspots</span></h2>
+            <p>A look at the areas most affected by human activity. Understanding the scale is the first step
+                toward empathy.</p>
+        </div>
+
+        <div class="cards-grid">
+            <div class="info-card map-card danger-level-high">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <h3>Great Pacific<br>Garbage Patch</h3>
+                    <div class="status-badge">Status: Critical</div>
+                    <p>The largest accumulation of ocean plastic, covering an estimated 1.6 million square kilometers
+                        between Hawaii and California.</p>
+                </div>
+            </div>
+
+            <div class="info-card map-card danger-level-mid">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <h3>Mediterranean<br>Sea</h3>
+                    <div class="status-badge">Status: High Risk</div>
+                    <p>A semi-enclosed sea that traps microplastics at an alarming rate, heavily impacting marine life
+                        and local communities.</p>
+                </div>
+            </div>
+
+            <div class="info-card map-card danger-level-low">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <h3>Red Sea<br>Coral Reefs</h3>
+                    <div class="status-badge">Status: Monitored</div>
+                    <p>While still vibrant, unique coral ecosystems face growing threats from tourism waste and coastal
+                        development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pollution Calculator  -->
+    <section class="deep-sea-section" id="calculator">
+        <div class="section-header">
+            <div class="tag"></div>
+            <h2>Ocean Impact <span class="highlight">Calculator</span></h2>
+            <p>Small habits lead to big changes. Calculate your annual plastic footprint and see how you can help
+                protect the deep.</p>
+        </div>
+
+        <div class="calc-card">
+            <div class="card-glow"></div>
+            <div class="card-content">
+                <div class="input-wrapper">
+                    <p>How many plastic bottles do you use per week?</p>
+                    <div class="input-control">
+                        <input type="number" id="bottles" value="0" min="0">
+                        <span>bottles / week</span>
+                    </div>
+                </div>
+
+                <button class="btn-primary" onclick="calculateImpact()">Analyze My Impact</button>
+
+                <div id="calc-result" class="result-display">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ocean Problems & Solutions -->
+    <section class="ocean-issues" id="issues">
+        <div class="ocean-issues-header">
+            <h2>Ocean Problems & <span class="highlight">Solutions</span></h2>
+            <p>
+                Human activity is transforming the ocean. Understanding the threats is the first step
+                toward protecting the blue heart of our planet.
+            </p>
+        </div>
+
+        <div class="issue-grid">
+            <div class="issue-card">
+                <h3>Plastic Pollution</h3>
+                <div class="issue-tag">Problem</div>
+                <p>
+                    Millions of tons of plastic enter the ocean every year, harming wildlife that
+                    ingest or become entangled in it and breaking down into microplastics.
+                </p>
+                <ul>
+                    <li>Reduce single‑use plastics and improve recycling systems.</li>
+                    <li>Support cleanup projects and coastal community initiatives.</li>
+                    <li>Choose products with minimal or reusable packaging.</li>
+                </ul>
+            </div>
+            <div class="issue-card">
+                <h3>Overfishing & Bycatch</h3>
+                <div class="issue-tag">Problem</div>
+                <p>
+                    Unsustainable fishing depletes fish populations and accidentally kills non‑target
+                    species like turtles, sharks, and dolphins.
+                </p>
+                <ul>
+                    <li>Enforce science‑based fishing limits and protected areas.</li>
+                    <li>Use selective gear that reduces bycatch.</li>
+                    <li>Choose seafood from certified sustainable sources.</li>
+                </ul>
+            </div>
+            <div class="issue-card">
+                <h3>Warming & Acidification</h3>
+                <div class="issue-tag">Problem</div>
+                <p>
+                    The ocean absorbs excess heat and CO₂, leading to coral bleaching, shifting
+                    habitats, and more acidic waters that weaken shells and reefs.
+                </p>
+                <ul>
+                    <li>Cut greenhouse gas emissions and transition to clean energy.</li>
+                    <li>Protect and restore blue carbon ecosystems (mangroves, seagrass).</li>
+                    <li>Support climate‑resilient coastal planning and conservation.</li>
+                </ul>
+            </div>
+            <div class="issue-card">
+                <h3>Habitat Destruction & Noise</h3>
+                <div class="issue-tag">Problem</div>
+                <p>
+                    Coastal development, bottom trawling, deep‑sea mining, and ship noise
+                    destroy habitats and disrupt communication for marine life.
+                </p>
+                <ul>
+                    <li>Ban destructive fishing methods and regulate seabed mining.</li>
+                    <li>Create marine protected areas and restore damaged habitats.</li>
+                    <li>Implement quieter ship technologies and shipping lanes.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ocean Solutions -->
+    <section class="deep-sea-section" id="solutions">
+        <div class="section-header">
+            <div class="tag">Be Part of the Solution</div>
+            <h2>Safe & <span class="highlight">Green</span> Alternatives</h2>
+            <p>Small daily changes can lead to a massive positive impact. Choose products that protect the deep.</p>
+        </div>
+
+        <div class="cards-grid">
+            <div class="info-card solution-card">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <h3>Stainless Steel<br>Bottles</h3>
+                    <p><b>Safe & Durable:</b> Prevents thousands of single-use bottles from entering the ocean. Does not
+                        leak microplastics into your water.</p>
+                    <div class="impact-tag">Impact: Zero Plastic</div>
+                </div>
+            </div>
+
+            <div class="info-card solution-card">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <h3>Bamboo<br>Toothbrushes</h3>
+                    <p><b>Biodegradable:</b> A fast-growing plant that naturally returns to the earth, unlike plastic
+                        brushes that last for centuries.</p>
+                    <div class="impact-tag">Impact: Compostable</div>
+                </div>
+            </div>
+
+            <div class="info-card solution-card">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <h3>Glass or Steel<br>Straws</h3>
+                    <p><b>Marine-Safe:</b> Eliminates one of the top ocean pollutants that directly threaten marine
+                        animals like sea turtles.</p>
+                    <div class="impact-tag">Impact: Wildlife Protection</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bg"></div>
+        <div class="footer-overlay"></div>
+
+        <div class="footer-content">
+            <h2>THE OCEAN NEEDS US NOW</h2>
+            <h3>Join us</h3>
+            <p>Our oceans produce over 50% of the world's oxygen, regulate our climate, and sustain millions of species.
+                Yet, they face unprecedented threats from pollution, overfishing, and climate change. The time for
+                observation has passed. Now is the time for action.</p>
+
+            <div class="footer-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="footer-copy">&copy; 2025 Blue Ocean Team. All rights reserved.</div>
+    </footer>
+
+
+
+    <script>
+        function calculateImpact() {
+            const bottlesInput = document.getElementById('bottles');
+            const bottles = bottlesInput.value;
+            const resultDiv = document.getElementById('calc-result');
+
+            if (bottles === "" || bottles < 0) {
+                resultDiv.style.display = "block";
+                resultDiv.innerHTML = `<p style="color: #94a3b8;">Please enter a valid number.</p>`;
+                return;
+            }
+
+            resultDiv.style.display = "block";
+
+            if (parseInt(bottles) === 0) {
+                resultDiv.innerHTML = `
+                <h4 style="color: #4ade80; margin-bottom: 10px;">You are an Ocean Hero!</h4>
+                <p>By using <b>Zero</b> plastic bottles, you are actively protecting our marine life and coral reefs.</p>
+                <p style="font-size: 0.9rem; margin-top: 10px; color: #94a3b8;">Keep inspiring others to follow your sustainable lifestyle!</p>
+            `;
+                resultDiv.style.borderLeftColor = "#4ade80"; 
+            } else {
+                const yearly = bottles * 52;
+                resultDiv.innerHTML = `
+                <h4 style="color: #38bdf8; margin-bottom: 10px;">Your Annual Impact</h4>
+                <p>You consume approximately <b style="color:#f87171; font-size: 1.4rem;">${yearly}</b> plastic bottles every year!</p>
+                <p style="font-size: 0.9rem; margin-top: 10px; color: #94a3b8;">Switching to a reusable bottle could prevent this waste from reaching our oceans.</p>
+            `;
+                resultDiv.style.borderLeftColor = "#38bdf8"; 
+            }
+
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+</body>
+
+</html>
