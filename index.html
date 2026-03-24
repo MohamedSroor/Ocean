@@ -10,22 +10,21 @@
 
 <body>
     <!-- Navigation -->
-    <nav>
+   <nav>
         <div>
+            <span onclick="document.getElementById('H-bg').scrollIntoView({behavior: 'smooth'})">Main</span>
             <span onclick="document.getElementById('depth-layers').scrollIntoView({behavior: 'smooth'})">Depth</span>
             <span onclick="document.getElementById('creatures').scrollIntoView({behavior: 'smooth'})">Creatures</span>
             <span onclick="document.getElementById('impact-map').scrollIntoView({behavior: 'smooth'})">Impact Map</span>
             <span onclick="document.getElementById('calculator').scrollIntoView({behavior: 'smooth'})">Calculator</span>
             <span onclick="document.getElementById('issues').scrollIntoView({behavior: 'smooth'})">Problems</span>
-            <span
-                onclick="document.getElementById('solutions').scrollIntoView({behavior: 'smooth'})">Eco-Solutions</span>
+            <span onclick="document.getElementById('solutions').scrollIntoView({behavior: 'smooth'})">Eco-Solutions</span>
         </div>
-        <div>2026</div>
     </nav>
 
     <!-- Hero Section -->
     <header>
-        <video src="images/Deep_Ocean_Video_Generation.mp4" class="H-bg" autoplay muted loop playsinline></video>
+        <video src="images/Deep_Ocean_Video_Generation.mp4" class="H-bg" id="H-bg" autoplay muted loop playsinline></video>
         <div class="hero-overlay"></div>
         <div class="light-rays"></div>
         <div class="light-beam"></div>
